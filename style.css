@@ -839,6 +839,7 @@ h1 .fas {
     font-weight: 600;
     font-size: 0.85rem;
     transition: all 0.3s ease;
+    width: auto;
 }
 
 .card-menu:hover {
@@ -1332,13 +1333,15 @@ h1 .fas {
     }
 
     .chef-items {
-        width:500px;
+        width:100%;
     }
     .form-grid {
         grid-template-columns: 1fr;
     }
     .chef-flex {
         grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 0 20px;
     }
 
 
@@ -1416,10 +1419,12 @@ h1 .fas {
         width:100%;
     }
     .chef-items {
-        width:1000px;
+        width:100%;
     }
     .chef-flex {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; 
+        gap: 15px;
+        padding: 0 15px; 
     }
     /*reservasi*/
     form p {
@@ -1439,20 +1444,26 @@ h1 .fas {
         border:2px solid var(--warna1);
         border-radius:10px;
     }
-    button {
-    width:20%;
-    display:block;
-    background-color:var(--warna1);
-    border-radius:8px;
-    color:var(--warna4);
-    padding:8px;
-    border:none;
-    margin:auto;
+    
+    .reservasi[type="submit"] {
+    width: 100%;
+    max-width: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 30px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    padding: 14px 20px;
+    margin: 10px auto 0;
     }
-    button:hover {
-    background-color:var(--warna3);
-    color:var(--warna1);
+
+    .reservasi[type="submit"]:hover {
+    box-shadow: 0 6px 18px rgba(197, 168, 128, 0.4);
+    transform: translateY(-3px) scale(1.03);
     }
+
 
     /* menu kapsul */
     .panah-kiri, .panah-kanan {
